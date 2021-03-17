@@ -1,0 +1,827 @@
+/****BASE STYLES*****/
+
+body{
+    font-family:'Source Sans Pro',sans-serif;
+    font-size:16px;
+    background-color: black;
+    background-size: cover;
+}
+.full-width {
+    width: 100%;
+}
+
+.half-width {
+    width: 50%;
+}
+
+.third-width {
+    width: 33%;
+}
+
+    .Mainheader-content{
+        padding:5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column wrap;
+    }
+
+    .Mainheader-content h1 {
+        color:#F0EBF4;
+        font-size: 4em;
+    }
+
+    .Mainheader-content h1 span {
+        color:#B39BC8;
+        padding-bottom: 10px;
+    }
+
+    .Mainheader-content h2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color:#F0EBF4;
+        text-decoration: underline 3px #B39BC8;
+        font-size: 3.5em;
+        height: 200px;
+        width: 80%;
+    }
+
+
+    /****NAV BAR****/
+
+    .Mainheader-content nav {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        }
+
+    .Mainheader-content nav ul{
+        display:flex;
+        flex-direction: column;
+        list-style-type: none;
+        justify-content:center;
+        align-items:center;
+    }
+
+    .btn{
+        border-radius: 30%;
+        border-color: transparent;
+        padding: 10px 5px;
+        font-size: 1.75em;
+        font-family:'Lora';
+        margin: 5px;
+        text-transform: uppercase;
+        transition:0.6s;
+        background-color:transparent;
+    }
+
+    .btn1:hover,.btn2:hover,.btn3:hover,.btn4:hover,.btn5:hover{
+        background-color: #B39BC8;
+    }
+
+    .btn::before{
+        position:absolute;
+        width: 100%;
+        height:0%;
+        z-index: -1;
+        transition:0.6s;
+    }
+
+    .btn1::before,.btn3::before,.btn5::before{
+        bottom: 0;
+    }
+
+    .btn2::before,.btn4::before{
+        top: 0;
+    }
+
+    .btn2:hover::before,.btn4:hover::before{
+        height:0%;
+    }
+
+    .btn1:hover::before,.btn3:hover::before,.btn5:hover::before{
+        height:180%;
+    }
+
+    nav ul li a {
+        font-size: 1.75em;
+        color:#fff;
+    }
+
+    #Contact .full-width{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column;
+        background:url(../img/plain-background2.jpg);
+        background-size:cover;
+        border: groove;
+        border-radius:25px;
+        height: 1000px;
+        width: 100%;
+        margin: 0;
+    }
+
+    #Contact img#Contact-img {
+        border: 12px solid #B39BC8;
+    }
+
+    #Contact h2, #Contact #email-header, #Contact #socialmedia-header, #Contact #Contact-ul,#Contact #envelope{
+        display:inline-block;
+        color:black;
+        padding: 0 0 5% 25%;
+
+    }
+
+    #Contact h2 {
+        font-size:3.5em;
+        font-family:'Lora';
+        font-weight:bold;
+        margin: 0;
+    }
+
+    #Contact #email-header{
+        font-size:2.75em;
+        font-weight:lighter;
+        margin: 0;
+    }
+
+    #socialmedia-header{
+        font-size:2.5em;
+        font-weight:bolder;
+        margin: 0;
+    }
+
+    .firstLink a{
+        color: #8B008B;
+        text-decoration:underline;
+        text-transform:uppercase;
+        font-weight:bolder;
+        font-size:2.5em;
+        padding-left:30%;
+    }
+
+    footer .social-icons {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-direction: row;
+        margin-left: 300px;
+        color: #fff;
+    }
+
+    footer .social-icons p{
+        background-color:#B39BC8;
+        border-radius: 50%;
+        width: 50px;
+        height: 75px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+    }
+
+    .social-icons i {
+        font-size: 3.75em;
+        margin: 0 0 20px 10px;
+    }
+
+    .secondLink a{
+        color: #B39BC8;
+        font-weight:bold;
+        font-size:1em;
+        padding-left:50%;
+        text-decoration:underline;
+        text-transform:uppercase;
+    }
+
+/* About Page */
+
+    #Aboutheader h1 {
+        display: none;
+    }
+
+    #Aboutheader nav {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    #About .full-width{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        flex-flow: column wrap;
+        border: groove;
+        border-radius:25px;
+        background:#B39BC8;
+    }
+
+    #About h2{
+        border-top:solid 1px white;
+        border-bottom:solid 1px white;
+        color: #F0EBF4;
+        font-family:'Lora';
+        font-weight:bold;
+        text-align:center;
+        text-transform:uppercase;
+        font-size:3em;
+        padding: 40px;
+
+    }
+    #About p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        line-height:100%;
+        padding:15px;
+        font-size: 2.75em;
+    }
+
+    #About img{
+        display: flex;
+        justify-content: center;
+        align-items:flex-end;
+        padding: 20px;
+        width: 300px;
+        height: 350px;
+    }
+/*Portfolio*/
+
+#Portfolioheader h1{
+        padding: 65px 0 65px 25px;
+        font-family:'Vollkorn',serif;
+        font-size:4em;
+        font-weight:bold;
+        text-transform:uppercase;
+        color: #B39BC8;
+        width: 100%;
+        text-align: center;
+    }
+
+    #Portfolioheader nav {
+        text-align: center;
+    }
+
+    #Portfolio .full-width{
+        margin:5px;
+        background-color:#B39BC8;
+        border:groove;
+        border-radius:25px;
+    }
+    #Portfolio img{
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top:30px;
+    }
+
+    #Portfolio a{
+        color:#8B008B;
+        display:flex;
+        flex-direction:column;
+        padding-top:15px;
+        text-align:center;
+        text-decoration: underline;
+        font-size: 3em;
+    }
+
+    #Portfolio p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row wrap;
+        font-size: 2.75em;
+        width: 50%;
+        padding-left: 25%;
+    }
+
+        /*****Skills*****/
+
+        #Skillsheader h1{
+            padding: 65px 0 65px 25px;
+            font-family:'Vollkorn',serif;
+            font-size:4em;
+            text-transform:uppercase;
+            color:#B39BC8;
+            width: 100%;
+            text-align: center;
+        }
+    
+        #Hardskills h2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-top: solid 1px white;
+            border-bottom: solid 1px white;
+            color:#F0EBF4;
+            text-transform: uppercase;
+            width: 100%;
+            padding:80px 0;
+            font-size: 3em;
+        }
+    
+        #Hardskills .full-width{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: row wrap;
+            background-color:#B39BC8;
+            width: 100%;
+            padding: 100px 10px;
+            margin-top: 20px;
+            text-align: center;
+            border:groove;
+            border-radius:25px;
+        }
+    
+        #Hardskills .third-width {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 0;
+            flex-basis: 30%;
+        }
+    
+        #Hardskills img {
+            width: 150px;
+            height: 175px;
+        }
+       
+        #Hardskills h3{
+            font-size:2.75em;
+            color: #8B008B;
+            padding: 10px;
+            margin: 0 auto;
+        }
+    
+        #Hardskills p {
+            font-family:'Lora' ;
+            font-weight:normal;
+            font-size:2em ;
+            line-height: 100%;
+        }
+    
+        #Softskills .full-width{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: row wrap;
+            background-color:#B39BC8;
+            width: 100%;
+            padding: 100px 10px;
+            margin-top: 20px;
+            text-align: center;
+            border:groove;
+            border-radius:25px;
+        } 
+    
+        #Softskills h2{
+            border-top: solid 1px white;
+            border-bottom: solid 1px white;
+            color:#F0EBF4;
+            text-transform: uppercase;
+            text-align: center;
+            width: 100%;
+            padding:80px 0;
+            font-size: 3em;
+        }
+    
+        #Softskills .third-width {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 0;
+            flex-basis: 30%;
+        }
+    
+        #Softskills h3{
+            font-size:2.75em;
+            color: #8B008B;
+            margin: 0 auto;
+            padding: 10px;
+        }
+    
+        #Softskills img {
+            width: 150px;
+            height: 175px;
+        }  
+    
+        #Softskills p{
+            font-family:'Lora' ;
+            font-weight:normal;
+            font-size:2em;
+            line-height: 100%;
+        }
+
+@media only screen and (min-width: 1200px) {
+/*****HEADER*****/
+
+
+    .Mainheader-content{
+        padding:5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .Mainheader h1 {
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        flex-direction:column;
+        font-family: 'Lora';
+        font-size: 3em;
+        font-weight:bold;
+        line-height: 100%;
+        width: 100%;
+        height: 200px;
+        color:#F0EBF4;
+    }
+
+    .Mainheader h1 span {
+        color:#B39BC8;
+        padding-bottom: 10px;
+    }
+
+    .Mainheader h2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row wrap;
+        font-family:'Vollkorn',sans-serif;
+        font-weight:bold;
+        width: 80%;
+        height: 200px;
+        text-decoration: underline 5px #B39BC8;
+        font-size:2.5em;
+        color:#F0EBF4;
+
+        
+    }
+    /****NAV BAR****/
+
+    .Mainheader-content nav ul{
+        display:flex;
+        flex-direction: row;
+        list-style-type: none;
+        justify-content:space-evenly;
+        align-items:center;
+    }
+
+    .btn{
+        border-radius: 30%;
+        border-color: transparent;
+        padding: 10px 5px;
+        font-size: 15px;
+        font-family:'Lora';
+        margin: 5px;
+        text-transform: uppercase;
+        transition:0.6s;
+        background-color:transparent;
+    }
+
+    .btn1:hover,.btn2:hover,.btn3:hover,.btn4:hover,.btn5:hover{
+        background-color: #B39BC8;
+    }
+
+    .btn::before{
+        position:absolute;
+        width: 100%;
+        height:0%;
+        z-index: -1;
+        transition:0.6s;
+    }
+
+    .btn1::before,.btn3::before,.btn5::before{
+        bottom: 0;
+    }
+
+    .btn2::before,.btn4::before{
+        top: 0;
+    }
+
+    .btn2:hover::before,.btn4:hover::before{
+        height:0%;
+    }
+
+    .btn1:hover::before,.btn3:hover::before,.btn5:hover::before{
+        height:180%;
+    }
+
+    nav ul li a {
+        font-size: 15px;
+        color:#fff;
+    }
+
+    /*****ABOUT******/
+
+    #Aboutheader h1 {
+        padding: 65px 0 65px 25px;
+        font-family:'Vollkorn',serif;
+        font-size:40px ;
+        font-weight:bold;
+        text-transform:uppercase;
+        color: #B39BC8;
+        width: 100%;
+        margin: 0;
+    }
+
+    #Aboutheader nav {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+    }
+
+    #About .full-width{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        flex-flow: column wrap;
+        border: groove;
+        border-radius:25px;
+        background:#B39BC8;
+    }
+
+    #About h2{
+        border-top:solid 1px white;
+        border-bottom:solid 1px white;
+        color: #F0EBF4;
+        font-family:'Lora';
+        font-weight:bold;
+        text-align:center;
+        text-transform:uppercase;
+        font-size:2em;
+        padding: 40px;
+
+    }
+    #About p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        line-height:40px;
+        padding:15px;
+        font-size: 1.2em;
+    }
+
+    #About img{
+        display: flex;
+        justify-content: center;
+        align-items:flex-end;
+        padding: 20px;
+    }
+    /*****Skills*****/
+
+    #Skillsheader h1{
+        padding: 65px 0 65px 25px;
+        font-family:'Vollkorn',serif;
+        font-size:3em;
+        text-transform:uppercase;
+        color:#B39BC8;
+        width: 100%;
+    }
+
+    #Hardskills h2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top: solid 1px white;
+        border-bottom: solid 1px white;
+        color:#F0EBF4;
+        text-transform: uppercase;
+        width: 100%;
+        padding:80px 0;
+    }
+
+    #Hardskills .full-width{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row wrap;
+        background-color:#B39BC8;
+        width: 100%;
+        padding: 100px 10px;
+        margin-top: 20px;
+        text-align: center;
+        border:groove;
+        border-radius:25px;
+    }
+
+    #Hardskills .third-width {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0;
+        flex-basis: 30%;
+    }
+
+    #Hardskills img {
+        width: 150px;
+        height: 175px;
+    }
+   
+    #Hardskills h3{
+        font-size:20px ;
+        color: #8B008B;
+        padding: 10px;
+        margin: 0 auto;
+    }
+
+    #Hardskills p {
+        font-family:'Lora' ;
+        font-weight:normal;
+        font-size:1em ;
+    }
+
+    #Softskills .full-width{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row wrap;
+        background-color:#B39BC8;
+        width: 100%;
+        padding: 100px 10px;
+        margin-top: 20px;
+        text-align: center;
+        border:groove;
+        border-radius:25px;
+    } 
+
+    #Softskills h2{
+        border-top: solid 1px white;
+        border-bottom: solid 1px white;
+        color:#F0EBF4;
+        text-transform: uppercase;
+        text-align: center;
+        width: 100%;
+        padding:80px 0;
+    }
+
+    #Softskills .third-width {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0;
+        flex-basis: 30%;
+    }
+
+    #Softskills h3{
+        font-size:1.2em;
+        color: #8B008B;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    #Softskills img {
+        width: 150px;
+        height: 175px;
+    }  
+
+    #Softskills p{
+        font-family:'Lora' ;
+        font-weight:normal;
+        font-size:1em;
+        line-height:25px ;
+    }
+    /*****PORTFOLIO*****/
+
+    #Portfolioheader h1{
+        padding: 65px 0 65px 25px;
+        font-family:'Vollkorn',serif;
+        font-size:3em ;
+        font-weight:bold;
+        text-transform:uppercase;
+        color: #B39BC8;
+        width: 100%;
+    }
+
+    #Portfolio .full-width{
+        margin:5px;
+        background-color:#B39BC8;
+        border:groove;
+        border-radius:25px;
+    }
+    #Portfolio img{
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top:30px;
+    }
+
+    #Portfolio a{
+        color:#8B008B;
+        display:flex;
+        flex-direction:column;
+        padding-top:15px;
+        text-align:center;
+        text-decoration: underline;
+        font-size: 1em;
+    }
+
+    #Portfolio p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row wrap;
+        font-size: 1.2em;
+        width: 50%;
+        padding-left: 25%;
+    }
+    /***** CONTACT *****/
+
+    #Contact .full-width{
+        background:url(../img/contact-img.jpg);
+        background-size:cover;
+        background-position: center bottom;
+        border: groove;
+        border-radius:25px;
+        padding:80px 10px;
+        margin-left: 10%;
+        height: 600px;
+        width: 80%;
+
+    }
+    #Contact img#Contact-img {
+        border: 12px solid #B39BC8;
+    }
+    #Contact h2, #Contact #email-header, #Contact #socialmedia-header, #Contact #Contact-ul,#Contact #envelope{
+        display:inline-block;
+        color:black;
+        padding-left: 200px;
+    }
+    #Contact h2 {
+        font-size:2.75em;
+        font-family:'Lora';
+        font-weight:bold;
+        line-height: 175%;
+    }
+    #Contact #email-header{
+        font-size:2em;
+        font-weight:lighter;
+        line-height: 50px;
+    }
+    #Contact #socialmedia-header{
+        font-size:20px;
+        font-weight:bolder;
+        line-height:100%;
+        margin-left: 10%;
+    }
+    .firstLink a{
+        color: #B39BC8;
+        text-decoration:underline;
+        text-transform:uppercase;
+        font-weight:bold;
+        font-size:25px;
+        padding-left:50%;
+    }
+
+    .firstLink img {
+        width: 50px;
+        height: 75px;
+        margin-left:45%;
+    }
+
+    footer .social-icons {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-direction: row;
+        margin-left: 20%;
+        color: #fff;
+    }
+
+    footer .social-icons p {
+        background-color:#B39BC8;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 15px;
+        padding: 5px;
+    }
+
+    .full-width .secondLink a{
+        flex-direction: row;
+        color: #B39BC8;
+        font-weight:bold;
+        font-size:1em;
+        margin-left:50%;
+        text-decoration:underline;
+        text-transform:uppercase;
+        text-align: center;
+        padding: 0;
+    }
+        
+}
